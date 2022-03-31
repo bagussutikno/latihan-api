@@ -18,7 +18,6 @@ class ProductController extends Controller
     {
         $products = Product::all();
         return response()->json([
-            "success" => true,
             "message" => "Product List",
             "data" => $products
         ]);
